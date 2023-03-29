@@ -1,11 +1,11 @@
 // Copyright 2021 NNTU-CS
+#include "include/tstack.h"
+#include <ctype.h>
 #include <iostream>
 #include <string>
 #include <sstream>
-#include <ctype.h>
 #include <cstdlib>
 #include <map>
-#include "include/tstack.h"
 
 int get_priority(char s) {
     switch (s) {
@@ -26,19 +26,16 @@ std::string infx2pstfx(std::string inf) {
         char c = inf[i];
         if (isdigit(c)) {
             ss << c;
-        }
-        else {
+        } else {
             ss << ' ';
             if (c == '(') {
                 stack.push(c);
-            }
-            else if (c == ')') {
+            } else if (c == ')') {
                 while (stack.get() != '(') {
                     ss << stack.pop() << ' ';
                 }
                 stack.pop();
-            }
-            else {
+            } else {
                 while (!stack.isEmpty() && get_priority(c) <= get_priority(stack.get())) {
                     ss << stack.pop() << ' ';
                 }
@@ -52,7 +49,7 @@ std::string infx2pstfx(std::string inf) {
     return ss.str();
 }
 
-int eval (std::string post) {
+int eval(std::string post) {
     TStack<int, 100> stack1;
     std::stringstream ss(post);
     std::string token;
@@ -60,8 +57,7 @@ int eval (std::string post) {
         if (isdigit(token[0])) {
             int num = std::atoi(token.c_str());
             stack1.push(num);
-        }
-        else {
+        } else {
             int b = stack1.pop();
             int a = stack1.pop();
             int sum = a + b;
