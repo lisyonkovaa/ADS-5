@@ -5,7 +5,7 @@
 #include <cstdlib>
 #include <map>
 #include <ctype.h>
-#include "include/tstack.h"
+#include "tstack.h"
 
 int get_priority(char s) {
     switch (s) {

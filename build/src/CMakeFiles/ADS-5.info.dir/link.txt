@@ -1,0 +1,1 @@
+/usr/bin/g++  -g   CMakeFiles/ADS-5.info.dir/main.cpp.o  -o ADS-5.info  -Wl,-rpath,/workspaces/ADS-5/build/src: libADS-5.so -lpthread 

@@ -1,0 +1,1 @@
+/usr/bin/g++  -g   CMakeFiles/ADS-5.test.dir/AllTests.cpp.o CMakeFiles/ADS-5.test.dir/tests.cpp.o  -o ADS-5.test  -Wl,-rpath,/workspaces/ADS-5/build/src: ../src/libADS-5.so -lgtest -lpthread 

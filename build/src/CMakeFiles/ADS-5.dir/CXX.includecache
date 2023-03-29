@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/workspaces/ADS-5/src/alg.cpp
+iostream
+-
+string
+-
+sstream
+-
+cstdlib
+-
+map
+-
+ctype.h
+-
+include/tstack.h
+/workspaces/ADS-5/src/include/tstack.h
+

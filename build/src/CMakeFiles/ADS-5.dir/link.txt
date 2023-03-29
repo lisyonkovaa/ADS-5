@@ -1,0 +1,1 @@
+/usr/bin/g++ -fPIC -g  -shared -Wl,-soname,libADS-5.so -o libADS-5.so CMakeFiles/ADS-5.dir/alg.cpp.o  -lpthread 

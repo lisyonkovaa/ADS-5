@@ -1,0 +1,22 @@
+[
+{
+  "directory": "/workspaces/ADS-5/build/src",
+  "command": "/usr/bin/g++   -I/workspaces/ADS-5/build/src -I/workspaces/ADS-5/include  -g   -std=gnu++17 -o CMakeFiles/ADS-5.info.dir/main.cpp.o -c /workspaces/ADS-5/src/main.cpp",
+  "file": "/workspaces/ADS-5/src/main.cpp"
+},
+{
+  "directory": "/workspaces/ADS-5/build/src",
+  "command": "/usr/bin/g++  -DADS_5_EXPORTS -I/workspaces/ADS-5/build/src -I/workspaces/ADS-5/include  -g -fPIC   -std=gnu++17 -o CMakeFiles/ADS-5.dir/alg.cpp.o -c /workspaces/ADS-5/src/alg.cpp",
+  "file": "/workspaces/ADS-5/src/alg.cpp"
+},
+{
+  "directory": "/workspaces/ADS-5/build/test",
+  "command": "/usr/bin/g++  -DTEST_DIR=\\\"/workspaces/ADS-5/test/test\\\" -I/workspaces/ADS-5/build/src -I/workspaces/ADS-5/include  -g   -std=gnu++17 -o CMakeFiles/ADS-5.test.dir/AllTests.cpp.o -c /workspaces/ADS-5/test/AllTests.cpp",
+  "file": "/workspaces/ADS-5/test/AllTests.cpp"
+},
+{
+  "directory": "/workspaces/ADS-5/build/test",
+  "command": "/usr/bin/g++  -DTEST_DIR=\\\"/workspaces/ADS-5/test/test\\\" -I/workspaces/ADS-5/build/src -I/workspaces/ADS-5/include  -g   -std=gnu++17 -o CMakeFiles/ADS-5.test.dir/tests.cpp.o -c /workspaces/ADS-5/test/tests.cpp",
+  "file": "/workspaces/ADS-5/test/tests.cpp"
+}
+]
