@@ -1,10 +1,10 @@
 // Copyright 2021 NNTU-CS
+#include <ctype.h>
 #include <iostream>
 #include <string>
 #include <sstream>
 #include <cstdlib>
 #include <map>
-#include <ctype.h>
 #include "tstack.h"
 
 int get_priority(char s) {
@@ -36,8 +36,8 @@ std::string infx2pstfx(std::string inf) {
                 }
                 stack.pop();
             } else {
-                while (!stack.isEmpty() 
-                && get_priority(c) <= get_priority(stack.get())) {
+                while (!stack.isEmpty() && \
+                get_priority(c) <= get_priority(stack.get())) {
                     ss << stack.pop() << ' ';
                 }
                 stack.push(c);
